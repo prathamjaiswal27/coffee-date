@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cute Buttons</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <style>
+    * {
+      background-color: #FDB0C0;
+    }
+
+    #text {
+      padding-left: 480px;
+      padding-top: 200px;
+      font-family: 'Fredoka One', cursive;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    #nob, #yesb {
+      border-radius: 20px;
+      font-family: 'Fredoka One', cursive;
+      font-size: 20px;
+      background-color: #FFD166;
+      padding: 20px 40px;
+    }
+
+    #No {
+      padding-left: 630px;
+      display: inline-block;
+    }
+
+    #Yes {
+      display: inline-block;
+      margin-left: 30px;
+    }
+
+    #yesb {
+      transition: 0.6s;
+    }
+
+    #yesb:hover {
+      background-color: #EF476F;
+      color: white;
+    }
+
+    #nob {
+      position: relative;
+      transition: transform 0.1s ease;
+    }
+
+    #nob:hover {
+      transform: translateY(200px);
+    }
+
+    #message {
+      font-family: 'Fredoka One', cursive;
+      font-size: 24px;
+      text-align: center;
+      margin-top: 40px;
+      opacity: 0;
+      transition: opacity 1s ease;
+      color: #EF476F;
+    }
+  </style>
+</head>
+<body>
+  <div id="text">Hey, would you like to grab a coffee with me?</div>
+
+  <div id="No">
+    <button id="nob">No</button>
+  </div>
+  <div id="Yes">
+    <button id="yesb">Yes</button>
+  </div>
+
+  <div id="message"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
